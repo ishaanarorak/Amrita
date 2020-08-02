@@ -1,0 +1,298 @@
+
+/* navbar  */
+  .navbar.fixed-top {
+    background-color: #9bf6ff;
+  }
+
+  a.navbar-brand{
+    color:black;
+    font-weight: 800;
+  }
+
+  a.nav-item.nav-link{
+    color: #050505;
+    font-weight: 600;
+  }
+
+  a.nav-item.nav-link.active{
+    background-color: #fbbbb9e3;
+    color: black;
+  }
+
+  .heading{
+      font-weight: bold;
+      font-size: 40px;
+  }
+
+  button.navbar-toggler{
+    border-color: #000000;
+    background-color:  #fbbbb9e3;
+  }
+  
+  
+  
+  /* PARALLAX  */
+  
+  .parallax {
+    /* The image used */
+    background-image: url("../public/images/IMG-20190929-WA0006.jpg");
+  
+    /* Set a specific height */
+    min-height: 600px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
+  
+
+    .section-1{
+        text-align: center;
+    }
+
+    .wish-text{
+      text-align: center;
+      position: absolute;
+      top: 20%;
+      
+    }
+
+    /* .overlay{
+        width: 100%;
+        height: 91vh;
+        position: center;
+        top: 60px;
+        left: 0px;
+        background: linear-gradient(180deg, rgba(56,56,58,0.45702030812324934) 00%, rgba(45,48,72,0.6306897759103641) 100%);
+        opacity: 100%;
+    } */
+
+    span.overlay{
+        top: 60px;
+    }
+     
+   
+
+    .banner-data h1{
+       
+        /* margin-bottom: 150px;
+        border: 2px #fbbbb9e3 solid; */
+        color: #f0f0f0;
+        font-family: LatoThin;
+        font-weight: 400;
+        font-size: 4.5rem;
+        text-shadow: 12px 12px 18px #000000;
+       
+    }
+
+    .seemorebtn{
+        position: absolute;
+        text-align: center;
+    }
+
+    .see-more{
+        width: 185px;
+        padding: 10px;
+        margin: 15px;
+        border: 2px #9bf6ff solid;
+        background: #f0f0f000;
+        border-radius: 40px;
+        color: #f0f0f0;
+        font-weight: 400;
+        /* position: absolute;
+        text-align: center;
+        left: 35%;
+        top: 82%; */
+    }
+
+    .see-more:hover{
+        width: 185px;
+        padding: 10px;
+        margin: 15px;
+        border: 2px #9bf6ff solid;
+        background: #fbbbb9e3;
+        border-radius: 40px;
+        color: #2b2b2b;
+        transition: all 0.4s;
+        scroll-behavior: smooth;
+        font-weight: 600;
+
+    }
+
+
+    /* VIDEO POP-UP */
+
+    .popuptext {
+      visibility: hidden;
+      height: 450px;
+      width: 370px;
+      border: 1px solid #dee2e6;
+      border-radius: .25rem;
+      padding: .25rem;
+      background-color: #FBBBB9;
+      z-index: 1;
+    }
+
+    .fadeOut {
+      animation: fadeOut ease 2s;
+      -webkit-animation: fadeOut ease 2s;
+      -moz-animation: fadeOut ease 2s;
+      -o-animation: fadeOut ease 2s;
+      -ms-animation: fadeOut ease 2s;
+    }
+
+
+   @-webkit-keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+ }
+ 
+ @keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+ }
+    
+    .popup .show {
+      visibility: visible;
+      -webkit-animation: fadeIn 1s;
+      animation: fadeIn 1s;
+    }
+
+    
+    
+    @-webkit-keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    video#myPopup.popuptext.show{
+      margin-top: 70px;
+    }
+
+  
+  /* INTRO  */
+  
+  .intro {
+    position: relative;
+    width: 50%;
+  }
+  
+  .introimage {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #fbbbb9e3;
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .introtext {
+    color: rgb(12, 11, 11);
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+ 
+  
+ 
+  
+  
+  
+  /* GALLERY */
+  
+ div.jumbotron {
+   margin-top: 30px;
+    background-color: #FBBBB9;
+}
+
+.vid-thumbnail {
+  height: 450px;
+  width: 370px;
+  border: 1px solid #dee2e6;
+  border-radius: .25rem;
+  padding: .25rem;
+  background-color: #FBBBB9;
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  margin-left: 35px;
+}
+
+img.img-thumbnail{
+    height: 450px;
+    width: 370px;
+}
+
+div.col-lg-4.col-md-6.col-sm-6{
+    padding: 0;
+}
+
+.img-thumbnail {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  margin-left: 35px;
+  
+}
+.img-thumbnail:hover {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+img.img-thumbnail {
+  background-color: #FBBBB9;
+}
+
+.vid-thumbnail:hover {
+  -webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+
+  
