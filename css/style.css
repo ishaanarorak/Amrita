@@ -224,18 +224,44 @@
   .container:hover .overlay {
     opacity: 1;
   }
-  
-  .introtext {
+
+  .introtext p {
     color: rgb(12, 11, 11);
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
   }
+
+  @media (max-width: 500px){
+
+    .introtext p {
+      font-size: 10px;
+    }
+  }
+  
+  @media (min-width: 501px) and (max-width: 844px){
+
+    .introtext p {
+      font-size: 15px;
+    }
+  }
+
+  @media (min-width: 845px){
+    .introtext p {
+      font-size: 20px;
+      /* position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center; */
+    }
+  }
+
+  .introtext {
+    margin: auto;
+    position: absolute;
+  }
+
+
   
  
   
