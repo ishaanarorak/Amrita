@@ -19,5 +19,4 @@ function myFunction() {
         popup.muted= true;
         popup.pause();
     }
-  }
-
+}

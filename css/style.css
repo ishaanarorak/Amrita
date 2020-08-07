@@ -85,6 +85,7 @@
         font-weight: 400;
         font-size: 4.5rem;
         text-shadow: 12px 12px 18px #000000;
+        overflow: hidden;
        
     }
 
@@ -226,7 +227,7 @@
   
   .introtext {
     color: rgb(12, 11, 11);
-    font-size: 40px;
+    font-size: 20px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -243,10 +244,21 @@
   
   
   /* GALLERY */
+
+  div.row{
+    margin: 0 0 0 0;
+  }
   
- div.jumbotron {
+  div.jumbotron {
    margin-top: 30px;
     background-color: #FBBBB9;
+}
+
+
+
+div.thumbnail-div{
+  text-align: center;
+  margin: 5px 0 5px;
 }
 
 .vid-thumbnail {
@@ -260,7 +272,6 @@
 	transform: scale(1);
 	-webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
-  margin-left: 35px;
 }
 
 img.img-thumbnail{
@@ -277,7 +288,6 @@ div.col-lg-4.col-md-6.col-sm-6{
 	transform: scale(1);
 	-webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
-  margin-left: 35px;
   
 }
 .img-thumbnail:hover {
@@ -293,6 +303,7 @@ img.img-thumbnail {
   -webkit-transform: scale(1.1);
 	transform: scale(1.1);
 }
+
 
 
   
